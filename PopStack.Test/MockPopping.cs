@@ -3,7 +3,7 @@ using Moq.Protected;
 
 namespace PopStack.Test
 {
-    public class MockPopping : Mock<PoppingTestable>
+    public class MockPopping : Mock<Popping>
     {
         public MockPopping(int maxTries, int lookingFor) :base(MockBehavior.Strict, new object[] { maxTries, lookingFor })
         {
